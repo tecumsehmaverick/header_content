@@ -1,0 +1,14 @@
+div.field.field-content li.content-type-header.instance {
+	position: relative;
+}
+div.field.field-content li.content-type-header.instance label {
+	height: 32px;
+	line-height: 30px;
+	position: absolute;
+	right: 10em;
+	top: 0;
+}
+div.field.field-content li.content-type-header.instance label select {
+	display: inline;
+	width: auto;
+}
