@@ -102,7 +102,7 @@
 			parent::appendFormattedElement($wrapper, $settings, $data, $entry_id);
 
 			if (isset($data->style)) {
-				$wrapper->setAttribute('style', $data->style);
+				$wrapper->setAttribute('style', General::createHandle($data->style));
 			}
 		}
 	}
