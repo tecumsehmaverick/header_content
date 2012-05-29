@@ -97,4 +97,12 @@
 
 			return $result;
 		}
+
+		public function appendFormattedElement(XMLElement $wrapper, StdClass $settings, StdClass $data, $entry_id = null) {
+			parent::appendFormattedElement($wrapper, $settings, $data, $entry_id);
+
+			if (isset($data->style)) {
+				$wrapper->setAttribute('style', $data->style);
+			}
+		}
 	}
