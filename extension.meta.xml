@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<extension id="source_code_content" status="experimental" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+<extension id="header_content" status="experimental" xmlns="http://symphony-cms.com/schemas/extension/1.0">
 	<name>Header Content</name>
-	<description>A header and a sub header content type for the Content Field.</description>
+	<description>A header content type for the Content Field.</description>
 	<repo type="github">https://github.com/rowan-lewis/header_content</repo>
 	<types>
 		<type>Content Type</type>
