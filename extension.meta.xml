@@ -16,6 +16,6 @@
 		<dependency version="0.1">content_field</dependency>
 	</dependencies>
 	<releases>
-		<release version="0.1" date="2012-03-23" min="2.3" max="2.3.x" />
+		<release version="0.1" date="2012-05-30" min="2.3" max="2.3.x" />
 	</releases>
 </extension>
