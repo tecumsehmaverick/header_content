@@ -68,7 +68,6 @@
 		}
 
 		public function appendPublishInterface(XMLElement $wrapper, $field_name, StdClass $settings, StdClass $data, MessageStack $errors, $entry_id = null) {
-			parent::appendPublishInterface($wrapper, $field_name, $settings, $data, $errors, $entry_id);
 
 			// Style:
 			$values = array();
@@ -89,9 +88,26 @@
 			));
 
 			$wrapper->appendChild($label);
+			
+			// value
+			$text = Widget::Textarea(
+				"{$field_name}[data][value]", 1, 50, (
+					isset($data->value)
+						? $data->value
+						: null
+				)
+			);
+			$text->addClass('size-' . $settings->{'text-size'});
+
+			if ($settings->{'text-formatter'} != 'none') {
+				$text->addClass($settings->{'text-formatter'});
+			}
+
+			$wrapper->appendChild($text);
 		}
 
 		public function processData(StdClass $settings, StdClass $data, $entry_id = null) {
+					
 			$result = parent::processData($settings, $data, $entry);
 			$result->style = $data->{'style'};
 
